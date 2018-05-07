@@ -2,8 +2,8 @@
 Git aliases - is a basic script, which adds useful aliases to your `.gitconfig` file (as it's name indicates). I have made it for my own uses.
 
 ## Overview
-<img src"https://i.imgur.com/FC1rBIw.gifv" /></a>
-```xml
+![](https://i.imgur.com/FC1rBIw.gif)
+```html
   commits = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=iso ## displays coloured list of commits 
   commits-by = log --author ## commits of specified author
   contributors = shortlog -s -n # all contributors of repo
