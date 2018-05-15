@@ -24,7 +24,6 @@ Just download the `install.sh`, then type `./install.sh` in your terminal and it
   hard-reset = reset --hard
   update-modules = submodule update --init --recursive
 ```
-=======
 
 ## License
 [Unlicensed](LICENSE)
