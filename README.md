@@ -19,6 +19,7 @@ Git aliases - is a basic script, which adds useful aliases to your `.gitconfig` 
   branches = show-branch -a
   soft-reset = reset --soft
   hard-reset = reset --hard
+  update-modules = submodule update --init --recursive
 ```
 
 ## License

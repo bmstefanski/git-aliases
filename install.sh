@@ -13,4 +13,5 @@ echo "[alias]
     perm = update-index --chmod=+x
     branches = show-branch -a
     soft-reset = reset --soft
-    hard-reset = reset --hard" >> ~/.gitconfig
+    hard-reset = reset --hard
+    update-modules = submodule update --init --recursive" >> ~/.gitconfig
