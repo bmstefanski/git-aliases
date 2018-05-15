@@ -1,7 +1,10 @@
 # Git Aliases
 Git aliases - is a basic script, which adds useful aliases to your `.gitconfig` file (as it's name indicates). I have made it for my own uses.
 
-## Overview
+## Installation
+Just download the `install.sh`, then type `./install.sh` in your terminal and it will do all the work.
+
+## Screenshots
 ![](https://i.imgur.com/FC1rBIw.gif)
 ```html
   commits = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=iso ## displays coloured list of commits 
@@ -10,7 +13,7 @@ Git aliases - is a basic script, which adds useful aliases to your `.gitconfig` 
   unstash = stash apply # just unstash
   stash-list = stash list # shows list of stashed files
   newname = branch rename # makes new branch
-  co = chcekout
+  co = checkout
   pusz = push origin master # pushes to master
   yolo-push = push --force
   pul = fetch & git pull
@@ -21,6 +24,7 @@ Git aliases - is a basic script, which adds useful aliases to your `.gitconfig` 
   hard-reset = reset --hard
   update-modules = submodule update --init --recursive
 ```
+=======
 
 ## License
 [Unlicensed](LICENSE)
