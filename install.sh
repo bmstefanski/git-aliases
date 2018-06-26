@@ -5,7 +5,7 @@ echo "[alias]
     unstash = stash apply
     stash-list = stash list
     newname = branch rename
-    co = chcekout
+    co = checkout
     pusz = push origin master
     yolo-push = push --force
     pul = fetch & git pull
