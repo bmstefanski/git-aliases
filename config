@@ -5,20 +5,20 @@
     contributors = shortlog -s -n
     unstash = stash apply
     co = checkout
-    com = checkout master
+    com = !"git checkout $(git defb)"
     cm = commit
     br = branch
     aa = add -A
     amn = add .
     cb = "!git rev-parse --abbrev-ref HEAD"
-    puszm = push origin master
-    fepul = !sh -c 'git co master && git fetch && git pull && git co $0' 
-    fepulc = !sh -c 'git co master && git fetch && git pull && git co $(git cb)' 
+    puszm = !"git push origin $(git defb)"
+    fepul = !sh -c 'git co $(git defb) && git fetch && git pull && git co $0' 
+    fepulc = !sh -c 'git co $(git defb) && git fetch && git pull && git co $(git cb)' 
     pusz = !sh -c 'git push origin $0'
     puszc = !sh -c 'git push origin $(git cb)'
     fors = !sh -c 'git push origin $0 --force-with-lease'
     forsc = !sh -c 'git push origin $(git cb) --force-with-lease'
-    mrbs = rebase origin/master
+    mrbs = !"git rebase origin/$(git defb)"
     spierdalam = rebase --abort
     lecim = rebase --continue  
     perm = update-index --chmod=+x
