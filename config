@@ -25,6 +25,7 @@
     branches = show-branch -a
     soft = reset --soft
     hard = reset --hard
+    sethead = remote set-head origin master
 [user]
         name = Bart Stefanski
         email = contact@bstefanski.com
