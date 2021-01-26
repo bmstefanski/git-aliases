@@ -26,8 +26,10 @@
     soft = reset --soft
     hard = reset --hard
     sethead = remote set-head origin master
+    bdrem = !sh -c 'git push -d origin $0'
+    bdloc = !sh -c 'git branch -D $0'
 [user]
-        name = Bart Stefanski
-        email = contact@bstefanski.com
+	name = Bart Stefanski
+	email = contact@bstefanski.com
 [core]
-        editor = vim
+	editor = vim
