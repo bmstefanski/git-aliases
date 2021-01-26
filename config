@@ -1,7 +1,6 @@
 [alias]
     defb = !"git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'"
     commits = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=iso
-    by = log --author
     contributors = shortlog -s -n
     unstash = stash apply
     co = checkout
@@ -21,13 +20,13 @@
     mrbs = !"git rebase origin/$(git defb)"
     spierdalam = rebase --abort
     lecim = rebase --continue  
-    perm = update-index --chmod=+x
     branches = show-branch -a
     soft = reset --soft
     hard = reset --hard
     sethead = remote set-head origin master
     bdrem = !sh -c 'git push -d origin $0'
     bdloc = !sh -c 'git branch -D $0'
+    tree = log --oneline --graph --color --all --decorate
 [user]
 	name = Bart Stefanski
 	email = contact@bstefanski.com
