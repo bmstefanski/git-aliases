@@ -9,7 +9,7 @@
     br = branch
     aa = add -A
     amn = add .
-    cb = "!git rev-parse --abbrev-ref HEAD"
+    cb = !"git rev-parse --abbrev-ref HEAD"
     puszm = !"git push origin $(git defb)"
     fepul = !sh -c 'git co $(git defb) && git fetch && git pull && git co $0' 
     fepulc = !sh -c 'git co $(git defb) && git fetch && git pull && git co $(git cb)' 
@@ -18,7 +18,7 @@
     fors = !sh -c 'git push origin $0 --force-with-lease'
     forsc = !sh -c 'git push origin $(git cb) --force-with-lease'
     mrbs = !"git rebase origin/$(git defb)"
-    spierdalam = rebase --abort
+    nie = rebase --abort
     lecim = rebase --continue  
     branches = show-branch -a
     soft = reset --soft
@@ -27,8 +27,9 @@
     bdrem = !sh -c 'git push -d origin $0'
     bdloc = !sh -c 'git branch -D $0'
     tree = log --oneline --graph --color --all --decorate
+    nq = !sh -c 'git co -- $0'
 [user]
-	name = Bart Stefanski
-	email = contact@bstefanski.com
+    name = Bart Stefanski
+    email = contact@bstefanski.com
 [core]
-	editor = vim
+    editor = vim
