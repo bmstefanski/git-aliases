@@ -12,7 +12,7 @@
     cb = !"git rev-parse --abbrev-ref HEAD"
     puszm = !"git push origin $(git defb)"
     fepul = !sh -c 'git co $(git defb) && git fetch && git pull && git co $0' 
-    fepulc = !sh -c 'git co $(git defb) && git fetch && git pull && git co $(git cb)' 
+    fepulc = !sh -c 'export last_branch_name=$(git cb) && git co $(git defb) && git fetch && git pull && git co $last_branch_name' 
     pusz = !sh -c 'git push origin $0'
     puszc = !sh -c 'git push origin $(git cb)'
     fors = !sh -c 'git push origin $0 --force-with-lease'
