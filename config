@@ -1,4 +1,5 @@
 [alias]
+    revto = !"git diff --binary HEAD $0 | git apply"	
     defb = !"git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'"
     commits = log --pretty=format:'%C(yellow)%h %Cred%ad %Cblue%an%Cgreen%d %Creset%s' --date=iso
     contributors = shortlog -s -n
