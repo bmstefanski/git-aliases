@@ -30,6 +30,7 @@
     tree = log --oneline --graph --color --all --decorate
     nq = !sh -c 'git rm --cached $0'	
     nqstage= !sh -c 'git co -- $0'
+    resa = reset . 
 [user]
     name = Bart Stefanski
     email = contact@bstefanski.com
