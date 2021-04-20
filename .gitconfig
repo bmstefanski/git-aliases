@@ -12,6 +12,8 @@
     aa = add -A
     amn = add .
     cb = !"git rev-parse --abbrev-ref HEAD"
+    fresh = !"git fetch && git pull origin $(git cb)"
+    freshdr = !sh -c 'git fetch && git pull $0 $(git cb)'
     puszm = !"git push origin $(git defb)"
     fepul = !sh -c 'git co $(git defb) && git fetch && git pull && git co $0' 
     fepulc = !sh -c 'export last_branch_name=$(git cb) && git co $(git defb) && git fetch && git pull && git co $last_branch_name' 
@@ -33,7 +35,7 @@
     nqs = !sh -c 'git co -- $0'
     resa = reset .
     difs = diff --cached
-    dif = diff 
+    dif = diff
 [user]
     name = Bart Stefanski
     email = contact@bstefanski.com
