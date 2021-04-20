@@ -30,8 +30,10 @@
     bdloc = !sh -c 'git branch -D $0'
     tree = log --oneline --graph --color --all --decorate
     nq = !sh -c 'git rm --cached $0'	
-    nqstage= !sh -c 'git co -- $0'
-    resa = reset . 
+    nqs = !sh -c 'git co -- $0'
+    resa = reset .
+    difs = diff --cached
+    dif = diff 
 [user]
     name = Bart Stefanski
     email = contact@bstefanski.com
