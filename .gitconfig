@@ -36,6 +36,7 @@
     resa = reset .
     difs = diff --cached
     dif = diff
+    amen = cm --amend
 [user]
     name = Bart Stefanski
     email = contact@bstefanski.com
