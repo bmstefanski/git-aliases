@@ -36,7 +36,8 @@
     resa = reset .
     difs = diff --cached
     dif = diff
-    amen = cm --amend
+    amen = commit --amend
+    empty = commit --allow-empty
 [user]
     name = Bart Stefanski
     email = contact@bstefanski.com
