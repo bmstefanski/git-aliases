@@ -1,4 +1,5 @@
 [alias]
+    hidefuckup = !"git filter-branch --index-filter 'git rm -rf --cached --ignore-unmatch $0' HEAD"
     ai = add -p
     revto = !"git diff --binary HEAD $0 | git apply"	
     defb = !"git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'"
@@ -39,7 +40,8 @@
     amen = commit --amend
     empty = commit --allow-empty
 [user]
-    name = Bart Stefanski
+	name = Bart Stefanski
     email = contact@bstefanski.com
 [core]
     editor = vim
+	autocrlf = input
