@@ -18,11 +18,13 @@
     puszm = !"git push origin $(git defb)"
     fepul = !sh -c 'git co $(git defb) && git fetch && git pull && git co $0' 
     fepulc = !sh -c 'export last_branch_name=$(git cb) && git co $(git defb) && git fetch && git pull && git co $last_branch_name' 
+    fepuls = !sh -c 'export last_branch_name=$(git cb) && git co staging && git fetch && git pull && git co $last_branch_name'	
     pusz = !sh -c 'git push origin $0'
     puszc = !sh -c 'git push origin $(git cb)'
     fors = !sh -c 'git push origin $0 --force-with-lease'
     forsc = !sh -c 'git push origin $(git cb) --force-with-lease'
     mrbs = !"git rebase origin/$(git defb)"
+    srbs = !"git rebase origin/staging"
     nie = rebase --abort
     lecim = rebase --continue  
     branches = show-branch -a
