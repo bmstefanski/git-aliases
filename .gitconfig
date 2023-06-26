@@ -42,6 +42,7 @@
     dif = diff
     amen = commit --amend
     empty = commit --allow-empty
+    cme = !"git cm -m \"$(date)\""
 [user]
 	name = Bart Stefanski
     email = contact@bstefanski.com
